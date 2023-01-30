@@ -7,10 +7,7 @@ n = int(input('Введите размер 1 стороны: '))
 m = int(input('Введите размер 2 стороны: '))
 k = int(input('Введите кол-во долек: '))
 
-if n*m>k:
-    if k%n==0 or k%m==0:
-        print('Да')
-    else:
-        print('Нет')
+if n*m>k and (k%n==0 or k%m==0):
+    print('Да')
 else:
     print('Нет')
