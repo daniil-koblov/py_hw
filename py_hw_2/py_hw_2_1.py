@@ -12,15 +12,13 @@ weight = []
 for i in range(count):
     weight.append(int(input('Введите вес выбранного арбуза: ')))
 
-weight_min = 0
-weight_max = 0
+weight_min = weight[0]
+weight_max = weight[0]
 
 for i in range(len(weight)):
     if weight[i] > weight_max:
         weight_max = weight[i]
-
-for i in range(len(weight)):
-    if weight[i] < weight_min:
+    elif weight[i] < weight_min:
             weight_min = weight[i]
 
 print(weight_min)
