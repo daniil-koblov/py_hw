@@ -37,21 +37,11 @@ scr_dict.update(dict.fromkeys(['ж', 'з', 'х', 'ц', 'ч'], 5))
 scr_dict.update(dict.fromkeys(['ш', 'э', 'ю'], 8))
 scr_dict.update(dict.fromkeys(['ф', 'щ', 'ъ'], 10))
 
-print(scr_dict)
-
 word = input('Введите слово: ')
-word = list(word)
-print(word)
-sum = []
+
+sum = 0
 
 for i in range(len(word)):
-    for j in scr_dict:
-        for k in scr_dict:
-            if word[i] == scr_dict[j]: sum.append(scr_dict[j])
+    sum += scr_dict[word[i]]
 
-answ = 0
-
-for i in range(len(sum)):
-    answ += sum[i]
-
-print(answ)
+print(sum)
