@@ -12,14 +12,14 @@ a = []
 x = int(input('Введите искомое число: '))
 
 for i in range(n):
-    random_num = random.randint(1, 10)
-    if random_num != x: a.append(random_num)
-    else: i -= 1
+    rnum = random.randint(1, 10)
+    if rnum == x: rnum += 1
+    a.append(rnum)
 print(*a)
-find_num = a[0]
+fnum = a[0]
 
 for i in range(n-1):
-    if abs(a[i]-x) < abs(find_num -x): find_num = a[i]
+    if abs(a[i]-x) < abs(fnum -x): fnum = a[i]
 
 
-print(find_num)
+print(f'Ближайшее число к искомому {x} является {fnum}.')
