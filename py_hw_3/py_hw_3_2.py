@@ -19,7 +19,7 @@ print(*a)
 find_num = a[0]
 
 for i in range(n-1):
-    if abs(a[i]-x) < abs(find_num -x) : find_num= a[i]
+    if abs(a[i]-x) < abs(find_num -x): find_num = a[i]
 
 
 print(find_num)
