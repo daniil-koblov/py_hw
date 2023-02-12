@@ -9,7 +9,8 @@ while b < 0:
     b = int(input('В этой программе вводимая степень не может быть меньше 0: '))
 
 def degree (n, m):
-    if m < 1: return n // n
+    if n == 0: return 0
+    elif m == 0: return n // n
     else:
         return n * degree(n, m - 1)
 
