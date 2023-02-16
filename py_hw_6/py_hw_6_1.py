@@ -13,3 +13,10 @@ for i in range(1, n):
     b = a1 + ((i+1) - 1) * d
     a.append(b)
 print('Учитывая введенные данные, арифметическая прогрессия выглядит как:', *a)
+
+# ЭТАЛОННОЕ РЕШЕНИЕ:
+# a1 = int(input())
+# d = int(input())
+# n = int(input())
+# for i in range(n):
+#     print(a1 + i * d)
