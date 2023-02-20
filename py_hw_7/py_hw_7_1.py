@@ -30,3 +30,22 @@ if len(set(result)) == 1:
     print('Парам пам-пам')
 else:
     print('Пам парам')
+
+# stroka1 = 'пара-ра-рам рам-пaм-папам па-ра-па-дам'
+# vowels = ['а', 'е', 'ё', 'и', 'й', 'о', 'у', 'ы', 'э', 'ю', 'я']
+# phrases = stroka1.split()
+# if len(phrases) < 2:
+#     print('Количество фраз должно быть больше одной!')
+# else:
+#     countVowels = []
+
+#     for i in phrases:
+#         countVowels.append(len([x for x in i if x.lower() in vowels]))
+#     print(countVowels)
+#     print(countVowels[0])
+#     print(len(countVowels))
+#     print(countVowels.count(countVowels[0]))
+#     if countVowels.count(countVowels[0]) == len(countVowels):
+#         print('Парам пам-пам')
+#     else:
+#         print('Пам парам')
