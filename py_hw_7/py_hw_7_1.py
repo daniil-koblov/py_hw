@@ -11,3 +11,22 @@
 
 # Вывод:
 # Парам пам-пам
+
+str1 = input().split()
+
+vowels = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
+
+print(str1)
+
+result = []
+for i in str1:
+    k = 0
+    for j in i:
+        if j in vowels:
+            k += 1
+    result.append(k)
+
+if len(set(result)) == 1:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
