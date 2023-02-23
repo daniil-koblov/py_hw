@@ -5,7 +5,7 @@
 def add():
     with open('file.txt', 'a', encoding = 'utf-8') as data:
         for i in range(int(input('Введите кол-во строк: '))):
-            data.write(input('Введите ФИО полностью и номер телефона: ').lower() + '\n')
+            data.write(input('Введите ФИО полностью и номер телефона: ').title() + '\n')
     
 def output():
     path = 'file.txt'
@@ -26,7 +26,7 @@ def mod(info):
     with open('file.txt') as data:
         list_mod = []
         for line in data:
-            if info in line.split(): list_mod.append(input(f'{line} --> ').lower() + '\n')
+            if info in line.split(): list_mod.append(input(f'{line} --> ').title() + '\n')
             else: list_mod.append(line)
     with open('file.txt', 'w') as data:
         data.writelines(list_mod)
@@ -55,6 +55,5 @@ while x != 6:
     if x == 1: add()
     elif x == 2: output()
     elif x == 3: search(input('Введите искомые данные: '))  
-    elif x == 4: mod(input('Введите данные для изменения: ').lower())
-    elif x == 5: delete(input('Введите данные для удаления: ').lower())
-    elif x == 6: break
+    elif x == 4: mod(input('Введите данные для изменения: ').title())
+    elif x == 5: delete(input('Введите данные для удаления: ').title())
